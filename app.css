@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+}
+#app{
+    background: red;
+    background:url('./images/bg-intro-desktop.png') hsl(0, 100%, 74%) ;
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-left,
+.col-right{
+    display: flex;;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.col-left{
+   color: white;
+   margin: 100px 0 0 100px;
+   display: flex;
+   justify-content: center;
+}
+.col-right{
+    display: flex;
+    justify-content: stretch;
+    margin: 100px 100px 0 0;
+}
+button.primary,
+button.secondary{
+    color: white;
+    background: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding:20px 10px;
+    border: 0;
+    margin-bottom:30px;
+}
+button.secondary{
+    background: hsl(154, 59%, 51%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.attribution{
+    font-size: 11px;
+    border: 1px solid red;
+}
